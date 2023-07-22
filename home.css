@@ -1,0 +1,165 @@
+
+.top_wrapper {
+    position: relative;
+}
+
+#top {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+#logout {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    right: 150px;
+}
+
+.side1 {
+    float: right;
+    position: fixed;
+    bottom: 155px;
+    right: 150px;
+    background-color: rgb(90, 145, 255);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    z-index: 10;
+}
+.side2 {
+    float: right;
+    position: fixed;
+    bottom: 100px;
+    right: 150px;
+    background-color: rgb(90, 145, 255);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    z-index: 10;
+}
+
+.sideBtn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 3px dotted rgb(90, 145, 255);
+    border-bottom: 3px dotted rgb(90, 145, 255);
+}
+
+.nav ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding: 10px 35px 10px 35px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.nav ul li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.category h3 {
+    font-weight: bold;
+    padding: 0 900px 30px 0;
+}
+
+.item {
+    margin: 0 50px 20px 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.col-sm-3 {
+    width: 280px;
+}
+
+.col-sm-3 p {
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.test {
+    background-color: transparent;
+    border: none;
+}
+
+.box {
+    z-index: 10;
+    margin-top: 0;
+    border: 3px solid black;
+    width: 230px;
+    height: 350px;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.check {
+    display: none;
+}
+
+.box p {
+    text-align: center;
+}
+
+.boxBack{
+    background-color: white;
+}
+
+.name {
+    padding: 45px 0 30px 0;
+}
+
+.cost {
+    padding-bottom: 30px;
+}
+
+.buy {
+    background-color: transparent;
+    border: none;
+    width: 1070px;
+    background-color: rgb(90, 145, 255);
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#footer {
+    background-color: aquamarine;
+    height: 50px;
+
+}
+
+#footer p {
+    padding-top: 15px;
+}
