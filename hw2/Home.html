@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+<body>
+	<!--헤더-->
+	<div class="text-center top_wrapper">
+		<img src="/fruits/home.jpg" width="100%" id="mainImg">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			
+		</nav>
+		<p id="top">Happy Shopping</p>
+		<button id="logout" onclick="logout()">Logout</button>
+	</div>
+
+	<!--사이드 고정버튼-->
+	<div class="side1">
+		<button class="sideBtn" onclick="location.href='#mainImg'">TOP</button>
+	</div>
+	<div class="side2">
+		<button class="sideBtn" onclick="location.href='#footer'">BOTTOM</button>
+	</div>
+
+	<!--네비게이션바-->
+	<div class="nav">
+		<ul>
+			<li><a href="#best">BEST</a></li>
+			<li><a href="#fruit">FRUIT</a></li>
+			<li><a href="#vegetable">VEGETABLE</a></li>
+			<li><a href="#dairy">DAIRY</a></li>
+			<li><a href="#cloth">CLOTH</a></li>
+			<li><a href="#electronic">ELECTRONIC</a></li>
+			<li><a href="#book">BOOK</a></li>
+		</ul>
+	</div>
+
+	<!--카테고리-->
+	<div class="container-fluid text-center category">
+		<h3>BEST FRUIT</h3>
+	</div>
+	
+	<!--아이템 창-->
+	<div class="containter-fluid text-center item">
+		
+		<div class="row">
+			<div class="col-sm-3"><p>1</p>
+				<div class="box" id="boxA" onclick="selectA()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/apple.jpg" id="imgA" alt="apple" width="200px">
+					<div class="boxBack"><p class="name">Apple</p><p class="cost">5 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>2</p>
+				<div class="box" id="boxB" onclick="selectB()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/banana.jpg" id="imgB" alt="banana" width="200px">
+					<div class="boxBack"><p class="name">Banana</p><p class="cost">6 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>3</p>
+				<div class="box" id="boxC" onclick="selectC()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/orange.jpg" id="imgC" alt="orange" width="200px">
+					<div class="boxBack"><p class="name">Orange</p><p class="cost">4 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>4</p>
+				<div class="box" id="boxD" onclick="selectD()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/watermelon.jpg" id="imgD" alt="watermelon" width="200px">
+					<div class="boxBack"><p class="name">Watermelon</p><p class="cost">10 $</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-3"><p>5</p>
+				<div class="box" id="boxE" onclick="selectE()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/kiwi.jpg" id="imgE" alt="kiwi" width="200px">
+					<div class="boxBack"><p class="name">Kiwi</p><p class="cost">5 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>6</p>
+				<div class="box" id="boxF" onclick="selectF()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/strawberry.jpg" id="imgF" alt="strawberry" width="200px">
+					<div class="boxBack"><p class="name">Strawberry</p><p class="cost">7 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>7</p>
+				<div class="box" id="boxG" onclick="selectG()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/fig.jpg" id="imgG" alt="fig" width="200px">
+					<div class="boxBack"><p class="name">Fig</p><p class="cost">1 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>8</p>
+				<div class="box" id="boxH" onclick="selectH()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/dragonfruit.jpg" id="imgH" alt="dragonfruit" width="200px">
+					<div class="boxBack"><p class="name">Dragonfruit</p><p class="cost">2 $</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-3"><p>9</p>
+				<div class="box" id="boxI" onclick="selectI()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/mulberry.jpg" id="imgI" alt="mulberry" width="200px">
+					<div class="boxBack"><p class="name">Mulberry</p><p class="cost">3 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>10</p>
+				<div class="box" id="boxJ" onclick="selectJ()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/cherry.jpg" id="imgJ" alt="cherry" width="200px">
+					<div class="boxBack"><p class="name">Cherry</p><p class="cost">4 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>11</p>
+				<div class="box" id="boxK" onclick="selectK()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/peach.jpg" id="imgK" alt="peach" width="200px">
+					<div class="boxBack"><p class="name">Peach</p><p class="cost">5 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>12</p>
+				<div class="box" id="boxL" onclick="selectL()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/papaya.jpg" id="imgL" alt="papaya" width="200px">
+					<div class="boxBack"><p class="name">Papaya</p><p class="cost">6 $</p></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-3"><p>13</p>
+				<div class="box" id="boxM" onclick="selectM()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/pineapple.jpg" id="imgM" alt="pineapple" width="200px">
+					<div class="boxBack"><p class="name">Pineapple</p><p class="cost">7 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>14</p>
+				<div class="box" id="boxN" onclick="selectN()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/avocado.jpg" id="imgN" alt="avocado" width="200px">
+					<div class="boxBack"><p class="name">Avocado</p><p class="cost">8 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>15</p>
+				<div class="box" id="boxO" onclick="selectO()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/plum.jpg" id="imgO" alt="plum" width="200px">
+					<div class="boxBack"><p class="name">Plum</p><p class="cost">9 $</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3"><p>16</p>
+				<div class="box" id="boxP" onclick="selectP()" onmouseover="boxOn(this)" onmouseout="boxOut(this)">
+					<img src="/fruits/redberry.jpg" id="imgP" alt="redberry" width="200px">
+					<div class="boxBack"><p class="name">Redberry</p><p class="cost">10 $</p></div>
+				</div>
+			</div>
+		</div>
+		<!--Buy 버튼-->
+		<button class="buy" onclick="buy()">BUY</button>
+	</div>
+
+	<!--푸터-->
+	<div class="text-center" id="footer">
+		<p>This is Web Programming Homework</p>
+	</div>
+
+	<script type="text/javascript" src="home.js"></script>
+</body>
+</html>

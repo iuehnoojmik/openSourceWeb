@@ -1,0 +1,44 @@
+.wrapper {
+    position: relative;
+}
+
+#top {
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    font-size: 90px;
+    top: 200px;
+    left: 120px;
+}
+
+#loginWrapper {
+    position: absolute;
+    top: 230px;
+    right: 200px;
+}
+
+#id {
+    color: white;
+}
+
+#idBox {
+    width: 200px;
+    height: 30px;
+}
+
+#pw {
+    margin-top: 10px;
+    color: white;
+}
+
+#pwBox {
+    width: 200px;
+    height: 30px;
+}
+
+#loginBtn {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(67, 205, 74);
+    border: none;
+}
